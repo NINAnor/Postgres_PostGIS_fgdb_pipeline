@@ -42,7 +42,7 @@ for i_zip in xlist_files_zip:
     #    zipObj.extractall()
 
     ### list files with ending .gdb
-    xlist_files = glob.glob("/home/bedi/data/fkb_fgdb/scratch/" + '*.gdb')
+    xlist_files = glob.glob(path_to_scratch + '*.gdb')
 
 
     ### loop over files
