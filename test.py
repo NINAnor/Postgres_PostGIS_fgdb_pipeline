@@ -22,8 +22,9 @@ engine = create_engine('postgresql+psycopg2://bedi:postgis4101081@localhost:5432
 ### list files in folder, for now it's .gdb,
 ### must be changed to zips including temporarily writing extracted zips to either 'geospatialdata' or a temp-folder on scratch
 
+path_to_zip = YOURPATH_TO_ZIP
 
-xlist_files_zip = glob.glob("/home/bedi/data/fkb_fgdb/" + '*.zip')
+xlist_files_zip = glob.glob(path_to_zip + '*.zip')
 print(xlist_files_zip)
 
 path_to_scratch = "/home/bedi/data/fkb_fgdb/scratch/"
